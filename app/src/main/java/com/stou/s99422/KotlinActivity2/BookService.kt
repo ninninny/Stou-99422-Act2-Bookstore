@@ -14,6 +14,7 @@ data class BookService(
     }
 
     fun list(map: HashMap<String, Book>){
+        println("----------------------------------------------------------------------------")
         map.forEach { println("${it.value.bookID} : ${it.value.bookName} by ${it.value.bookAuthor} - ${it.value.bookPrice} THB")}
     }
 

@@ -20,7 +20,6 @@ fun main(){
 
         bs.submit(bName, bAuthor, bPrice)
 
-
     }
     println("================================")
     println("List of all books: ")
