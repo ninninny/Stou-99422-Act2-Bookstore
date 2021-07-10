@@ -6,5 +6,6 @@ data class Order(
     var orderID:String = "S0000",
     var orderCus:Customer? = null,
     var orderBook:Book? = null,
+    var orderQty:Int = 0,
     var orderDate:LocalDate = LocalDate.now()
 )

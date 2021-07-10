@@ -13,9 +13,14 @@ data class BookService(
         map.put(b.bookID,b)
     }
 
-    fun list(map: HashMap<String, Book>){
-        println("----------------------------------------------------------------------------")
-        map.forEach { println("${it.value.bookID} : ${it.value.bookName} by ${it.value.bookAuthor} - ${it.value.bookPrice} THB")}
+    fun list(){
+        println("__________________________________________________________________")
+        map.forEach { println("${it.value.bookID} : ${it.value.bookName} : by ${it.value.bookAuthor} : ${it.value.bookPrice} THB")}
+    }
+
+    fun list(books:HashMap<String, Book>){
+        println("__________________________________________________________________")
+        books.forEach { println("${it.value.bookID} : ${it.value.bookName} : by ${it.value.bookAuthor} : ${it.value.bookPrice} THB")}
     }
 
     fun bookCount(){

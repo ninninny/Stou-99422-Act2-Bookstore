@@ -23,7 +23,7 @@ fun main(){
     }
     println("================================")
     println("List of all books: ")
-    bs.list(booksMap)
+    bs.list()
     println("")
     bs.bookCount()
     println("================================")
