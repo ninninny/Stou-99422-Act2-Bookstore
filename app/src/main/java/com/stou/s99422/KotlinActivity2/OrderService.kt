@@ -39,7 +39,7 @@ data class OrderService(
             println("Price: ${it.value.orderBook?.bookPrice} x ${it.value.orderQty} qty")
             println("__________________________________________________________________")
         }
-        println("Total: "+priceTotal())
+        println("Total: "+priceTotal()+" THB")
 
     }
 }
